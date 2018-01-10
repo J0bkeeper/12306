@@ -1,0 +1,62 @@
+---
+#station_date:出发日期，格式ex：2018-01-06
+#station_trains:过滤车次，格式ex：
+                #    - "G1353"
+                #    - "G1329"
+                #    - "G1355"
+                #    - "G1303"
+                #    - "G1357"
+                #    - "G1305"
+                #    - "G1359"
+                #    - "G1361"
+                #    - "G1373"
+                #    - "G1363"
+#from_station: 始发站
+#to_station: 到达站
+#set_type: 坐席(商务座,二等座,特等座,软卧,硬卧,硬座,无座)
+#is_more_ticket:余票不足是否自动提交
+#select_refresh_interval:抢票刷新间隔时间，1为一秒，0.1为100毫秒，以此类推
+#expect_refresh_interval:售票未开始，等待刷新间隔时间，1为一秒，0.1为100毫秒，以此类推
+#ticket_black_list:加入小黑屋的等待时间，默认3 min
+#enable_proxy:是否开启代理模式，代理速度比较慢，如果是抢票阶段，不建议开启
+#ticke_peoples: 乘客
+#damatu：打码兔账号，用于自动登录
+#is_aotu_code是否自动打码，如果选择Ture,则调用打码兔打码，默认不使用打码兔
+set:
+  station_date: "2018-02-06"
+  station_trains:
+    - "G1353"
+    - "G1329"
+    - "G1355"
+    - "G1303"
+    - "G1357"
+    - "G1305"
+    - "G1359"
+    - "G1361"
+    - "G1373"
+    - "G1363"
+  from_station: "上海"
+  to_station: "长沙"
+  set_type:
+    - "二等座"
+    - "一等座"
+  is_more_ticket: True
+  ticke_peoples:
+    - "文贤平"
+    - "梁敏"
+  12306count:
+    - uesr: "931128603@qq.com"
+    - pwd: "QWERTY"
+
+select_refresh_interval: 1
+expect_refresh_interval: 1
+ticket_black_list_time: 3
+is_aotu_code: False
+#enable_proxy: False
+
+damatu:
+  uesr: "wenxianping"
+  pwd: "wen1995"
+
+
+
